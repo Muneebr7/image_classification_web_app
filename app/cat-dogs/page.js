@@ -17,7 +17,7 @@ function cat_dogs() {
     const formData = new FormData();
     formData.append("image", file);
     axios
-      .post("http://18.143.186.128/cats-dogs", formData, {
+      .post("https://muneebr7.com/cats-dogs", formData, {
         onUploadProgress: (progressEvent) => {
           const progress = Math.round(
             (progressEvent.loaded / progressEvent.total) * 100

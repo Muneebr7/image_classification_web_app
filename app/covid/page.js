@@ -17,7 +17,7 @@ function Covid() {
     const formData = new FormData();
     formData.append("imageFile", file);
     axios
-      .post("http://18.143.186.128/covid", formData, {
+      .post("https://muneebr7.com/covid", formData, {
         onUploadProgress: (progressEvent) => {
           const progress = Math.round(
             (progressEvent.loaded / progressEvent.total) * 100
