@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: white;
+  background: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.color {
+  height: 1000px;
+  width: 1000px;
+  background-image: radial-gradient(closest-side, rgba(255,230,9,0.21) , #000000);
+  position: absolute;
+  top: -500px;
+  left: 20%;
+  z-index: -1;
+}
+
+.boxShaddow {
+  box-shadow: -1px 1px 30px 10px rgba(255, 255, 255, 0.125);
+}
