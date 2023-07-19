@@ -17,7 +17,7 @@ function Covid() {
     const formData = new FormData();
     formData.append("imageFile", file);
     axios
-      .post("https://cors-anywhere.herokuapp.com/https://muneebr7.com/covid", formData, {
+      .post("https://muneebr7.com/covid", formData, {
         onUploadProgress: (progressEvent) => {
           const progress = Math.round(
             (progressEvent.loaded / progressEvent.total) * 100
